@@ -1,0 +1,130 @@
+mei@mei-pc MINGW32 ~/Desktop/11 (master)
+$ git add .
+
+mei@mei-pc MINGW32 ~/Desktop/11 (master)
+$ git commit -m 'u'
+[master 86d06ff] u
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename 11.txt => lianxi1/11.txt (100%)
+ rename README.md => lianxi1/README.md (100%)
+
+mei@mei-pc MINGW32 ~/Desktop/11 (master)
+$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/hello-mei/lianxi1.git/'
+
+mei@mei-pc MINGW32 ~/Desktop/11 (master)
+$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 442 bytes | 0 bytes/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/hello-mei/lianxi1.git
+   c674c42..86d06ff  master -> master
+
+mei@mei-pc MINGW32 ~/Desktop/11 (master)
+$ git add .
+
+mei@mei-pc MINGW32 ~/Desktop/11 (master)
+$ git diff
+
+mei@mei-pc MINGW32 ~/Desktop/11 (master)
+$ git commit -m 'u'
+[master 73d986c] u
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+mei@mei-pc MINGW32 ~/Desktop/11 (master)
+$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 310 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/hello-mei/lianxi1.git
+   86d06ff..73d986c  master -> master
+
+mei@mei-pc MINGW32 ~/Desktop/11 (master)
+$ git pull
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/hello-mei/lianxi1
+   73d986c..021fc13  master     -> origin/master
+Updating 73d986c..021fc13
+Fast-forward
+ lianxi1/11.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+mei@mei-pc MINGW32 ~/Desktop/11 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+mei@mei-pc MINGW32 ~/Desktop/11 (master)
+$
